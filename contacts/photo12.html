@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автобіографія | Учень 11-А класу</title>
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -50px auto 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Стиль для фото */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            display: block;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+      h2 {
+            color: #2a5298;
+            text-align: center;
+        }
+
+      h1 {
+            color: white;
+            text-align: center;
+         }
+
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item b {
+            color: #1e3c72;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Адаптивність для мобільних */
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Мій цифровий портрет</h1>
+    <p>Випускник 2026 року</p>
+</header>
+
+<div class="container">
+    <img src="https://via.placeholder.com/180" alt="Фото учня" class="profile-img">
+    
+    <h2>Сушанин Іван</h2>
+
+    <div class="section">
+        <h3>📌 Коротко про себе</h3>
+        <p>Я, Сушанин Іван, учень 11-Б класу спеціалізованої школи №12. Захоплююся точними науками, програмуванням та вивченням англійської мови. Готуюся до вступу в технічний університет.</p>
+    </div>
+
+    <div class="section">
+        <h3>📝 Автобіографія</h3>
+        <p>Народився 15 травня 2008 року в місті Київ. У 2014 році пішов до першого класу. Протягом навчання в школі брав активну участь у громадському житті, був учасником шкільної команди з футболу.</p>
+        <p>Мої головні досягнення — це призове місце на міській олімпіаді з математики (2025 рік) та успішне завершення курсів з основ Web-розробки.</p>
+    </div>
+
+    <div class="section">
+        <h3>🎯 Навички та інтереси</h3>
+        <ul style="columns: 2;">
+ 	    <li>Математика та логіка</li>
+            <li>HTML/CSS (початківець)</li>
+            <li>Рівень англійської: B2</li>
+            <li>Гра на гітарі</li>
+            <li>Волейбол</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>📞 Контакти</h3>
+        <div class="info-grid">
+            <div class="info-item"><b>Email:</b> oleksandr.example@mail.com</div>
+            <div class="info-item"><b>Телефон:</b> +380 00 000 00 00</div>
+            <div class="info-item">
+		<b>Instagram:</b>
+	    </div>
+            <div class="info-item"><b>Місто:</b> Київ, Україна</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Створено в рамках шкільного проєкту з інформатики
+</footer>
+
+</body>
+</html>
