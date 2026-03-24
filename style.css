@@ -1,0 +1,164 @@
+root {
+    --primary: #0057b7;
+    --accent: #ffd700;
+    --dark: #1e2937;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), #003d80);
+    color: white;
+    padding: 60px 20px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(transparent, var(--light));
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin: 0 0 10px 0;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.35rem;
+    margin: 0;
+    opacity: 0.95;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.class-info {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.class-info h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.students {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.student-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.student-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 87, 183, 0.15);
+}
+
+.student-card img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.student-card:hover img {
+    transform: scale(1.08);
+}
+
+.student-card h3 {
+    margin: 10px 0 6px;
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.student-card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.97rem;
+}
+
+.interest {
+    display: inline-block;
+    background: #f0f4ff;
+    color: var(--primary);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Секція статистики */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+footer {
+    background: var(--dark);
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+    font-size: 0.95rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover h3 {
+    color: var(--accent);
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+    header h1 { font-size: 2.6rem; }
+    .students { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+}
